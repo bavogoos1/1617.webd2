@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+    <title>About us</title>
+</head>
+<body class="about">
+    
+    <div class="topnav" id="myTopnav">
+        <img src="img/tonprew.png" id="logo" width="90px" height="70px;"/></a>
+        <a href="index.html">HOME</a>
+        <a class="about-nav" href="about.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="contact.html">FAQ</a>
+        <a href="team.html">TEAM</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    <h1>ABOUT US</h1>
+    <p>Hallo! Welkom op de site van grafisch bureau ‘Tonprew’. Ben je op zoek naar een logo,<br> 
+        wil je een grafisch ontwerp of ben je eerder op zoek naar een fotograaf? <br> Wij hebben het allemaal. 
+        Tonprew is een jong grafisch bureau met als werknemers allemaal <br>afgestudeerden aan Sint-Lucas en 
+        Artevelde. We delen allemaal dezelfde passie voor <br> ontwerp en dat maakt Tonprew een dynamisch 
+        en snel werkend bedrijf. <br> Op onze website kan je het voornaamste vinden en bekijken. 
+        <br> Heb je vragen aarzel dan niet om contact op te nemen.</p>
+
+<div class="slideshow" style="max-width:500px">
+  <img class="mySlides" src="img/bureau.jpg" style="width:100%">
+  <img class="mySlides" src="img/bureau1.jpg" style="width:100%">
+  <img class="mySlides" src="img/bureau2.jpg" style="width:100%">
+  <img class="mySlides" src="img/bureau3.jpg" style="width:100%">
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+	
+</body>
+</html>
+
